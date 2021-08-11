@@ -4,6 +4,10 @@ public class MessageBridge {
 
     private static MessageBridge mInstance;
 
+    private static String baseUrl = "http://192.168.10.141:3085";
+
+    private boolean reportLocation;
+
     private String userId;
 
     private String token;
@@ -23,7 +27,13 @@ public class MessageBridge {
         return mInstance;
     }
 
+    public static String getBaseUrl() {
+        return baseUrl;
+    }
 
+    public static void setBaseUrl(String baseUrl) {
+        MessageBridge.baseUrl = baseUrl;
+    }
 
 
     public String getUserId() {
@@ -40,5 +50,13 @@ public class MessageBridge {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public boolean isReportLocation() {
+        return reportLocation;
+    }
+
+    public void setReportLocation(boolean isReport) {
+        this.reportLocation = isReport;
     }
 }

@@ -24,13 +24,17 @@ public class MessageBridgePlugin implements FlutterPlugin, MethodCallHandler {
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("getPlatformVersion")) {
       result.success("Android " + android.os.Build.VERSION.RELEASE);
+    }else if(call.method.equals("setBaseUrl")) {
+      if (call.hasArgument("baseUrl")) {
+        MessageBridge.getInstance().setBaseUrl((String) call.argument("baseUrl"));
+      }
+    }else if(call.method.equals("setReportLocation")) {
+        MessageBridge.getInstance().setReportLocation((boolean) call.arguments);
     } else if(call.method.equals("setLoginInfo")) {
       if (call.hasArgument("uid") && call.hasArgument("token")) {
         MessageBridge.getInstance().setUserId((String) call.argument("uid"));
         MessageBridge.getInstance().setToken((String) call.argument("token"));
       }
-
-      result.notImplemented();
     } else {
       result.notImplemented();
     }

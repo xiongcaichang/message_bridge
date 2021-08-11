@@ -16,4 +16,12 @@ class MessageBridge {
     _channel.invokeMethod('setLoginInfo', {'uid': uid, 'token': token});
   }
 
+  static void setReportLocation(bool isReport) {
+    _channel.invokeMethod('setReportLocation', isReport);
+  }
+
+  static void setBaseUrl(String baseUrl) {
+    _channel.invokeMethod('setReportLocation', {'baseUrl': baseUrl});
+  }
+
 }

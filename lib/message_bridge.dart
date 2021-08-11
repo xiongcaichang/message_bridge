@@ -11,4 +11,9 @@ class MessageBridge {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+
+  static void setLoginInfo(String uid, String token) {
+    _channel.invokeMethod('setLoginInfo', {'uid': uid, 'token': token});
+  }
+
 }

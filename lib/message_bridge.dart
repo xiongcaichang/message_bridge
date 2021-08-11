@@ -21,7 +21,7 @@ class MessageBridge {
   }
 
   static void setBaseUrl(String baseUrl) {
-    _channel.invokeMethod('setReportLocation', {'baseUrl': baseUrl});
+    _channel.invokeMethod('setBaseUrl', {'baseUrl': baseUrl});
   }
 
 }

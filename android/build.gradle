@@ -28,3 +28,9 @@ android {
         minSdkVersion 16
     }
 }
+
+
+
+dependencies {
+    implementation 'com.github.getActivity:XXPermissions:11.8'
+}

@@ -21,7 +21,6 @@
           [MessageBridge shareInstance].uid =[call.arguments objectForKey:@"uid"];
           [MessageBridge shareInstance].token =[call.arguments objectForKey:@"token"];
           
-          
       }
     } else {
     result(FlutterMethodNotImplemented);

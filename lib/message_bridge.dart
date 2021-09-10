@@ -7,9 +7,9 @@ class MessageBridge {
   static const MethodChannel _channel =
       const MethodChannel('message_bridge');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+  static Future<bool> getAwaysLocationPermission() async {
+    final bool granted = await _channel.invokeMethod('getAwaysLocationPermission');
+    return granted;
   }
 
   static void setLoginInfo(String uid, String token) {

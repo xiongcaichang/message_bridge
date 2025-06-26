@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础颜色 -->
+    <color name="primary">#3F51B5</color>       <!-- 主色 (Material Indigo 500) -->
+    <color name="primaryDark">#303F9F</color>  <!-- 深主色 (Material Indigo 700) -->
+    <color name="accent">#FF4081</color>       <!-- 强调色 (Material Pink A200) -->
+
+    <!-- 背景/文字 -->
+    <color name="background">#F8F9FA</color>   <!-- 页面背景色 -->
+    <color name="white">#FFFFFF</color>        <!-- 纯白色 -->
+    <color name="text_primary">#212121</color> <!-- 主要文字 (87% 黑) -->
+    <color name="text_secondary">#757575</color> <!-- 次要文字 (60% 黑) -->
+    <color name="text_disabled">#BDBDBD</color>  <!-- 禁用状态文字 -->
+
+    <!-- 常用功能色 -->
+    <color name="divider">#E0E0E0</color>       <!-- 分割线颜色 -->
+    <color name="success">#4CAF50</color>       <!-- 成功提示色 (Material Green 500) -->
+    <color name="error">#F44336</color>         <!-- 错误提示色 (Material Red 500) -->
+    <color name="warning">#FFC107</color>       <!-- 警告提示色 (Material Amber 500) -->
+
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color> <!-- 完全透明 -->
+    <color name="black_transparent_50">#80000000</color> <!-- 50%透明黑色 -->
+
+    <!-- 常用中性色 -->
+    <color name="gray_light">#EEEEEE</color>    <!-- 浅灰 -->
+    <color name="gray_medium">#9E9E9E</color>   <!-- 中灰 -->
+    <color name="gray_dark">#616161</color>     <!-- 深灰 -->
+</resources>

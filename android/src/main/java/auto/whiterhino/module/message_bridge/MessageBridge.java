@@ -1,5 +1,12 @@
 package auto.whiterhino.module.message_bridge;
 
+import android.app.Application;
+
+import com.amap.api.navi.AmapNaviPage;
+import com.amap.api.navi.AmapNaviParams;
+import com.amap.api.navi.AmapNaviType;
+import com.amap.api.navi.AmapPageType;
+
 public class MessageBridge {
 
     private static MessageBridge mInstance;
@@ -59,4 +66,5 @@ public class MessageBridge {
     public void setReportLocation(boolean isReport) {
         this.reportLocation = isReport;
     }
+
 }

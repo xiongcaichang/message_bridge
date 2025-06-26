@@ -14,8 +14,12 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
         google()
-        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -33,4 +37,6 @@ android {
 
 dependencies {
     implementation 'com.github.getActivity:XXPermissions:11.8'
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
 }

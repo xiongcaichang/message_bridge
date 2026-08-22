@@ -37,7 +37,7 @@ android {
 
 
 dependencies {
-    implementation 'com.github.getActivity:XXPermissions:11.8'
-    implementation 'com.amap.api:navi-3dmap:latest.integration'
-    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    compileOnly 'com.github.getActivity:XXPermissions:18.63'
+    compileOnly 'com.amap.api:navi-3dmap:10.0.600_3dmap10.0.600'
+    compileOnly 'com.geyifeng.immersionbar:immersionbar:3.2.2'
 }

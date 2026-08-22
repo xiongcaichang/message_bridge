@@ -26,10 +26,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    namespace 'auto.whiterhino.module.message_bridge'
+    compileSdkVersion 34
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
     }
 }
 
